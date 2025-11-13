@@ -11,7 +11,7 @@
         }
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 800px;
         }
         table td, table th {
             border: 1px solid #ccc;
@@ -34,11 +34,16 @@
         tfoot td {
             font-style: italic;
         }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
     <p>Lorem ipsum dolor sit</p>
-
+<div class="responsive-table">
     <table>
         <caption>Uma descrição para tabela</caption>
         <thead>
@@ -56,8 +61,7 @@
                 <td>Corpo 3</td>
             </tr>
             <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
+                <td colspan="2">AQUI</td>
                 <td>Corpo 3</td>
             </tr>
             <tr>
@@ -69,11 +73,14 @@
 
         <tfoot>
             <tr>
-                <td>Corpo 1</td>
-                <td>Corpo 2</td>
-                <td>Corpo 3</td>
+                <td colspan="2" rowspan="2"></td>
+                <td rowspan="">TOTAL: <br></td>
+            </tr>
+            <tr>
+                <td>R$555</td>
             </tr>
         </tfoot>
     </table>
+</div>
 </body>
 </html>

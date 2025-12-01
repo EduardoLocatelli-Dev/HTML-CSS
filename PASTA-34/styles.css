@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: inherit;
+    background: yellow;
+    height: 640px;
+    width: 960px;
+}
+
+.flex-item {
+    width: 33.33%;
+    color: #fff;
+    background: red;
+}
+/* 
+.flex-item:nth-child(3) {
+    font-size: 40px;
+} */
